@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://hackdata.cn/note/view_static_note/b1478a5ce798739d1093e7580f52ef9b/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="http://hackdata.cn/static/image/favicon.ico">
+  <link href="./数据嗨客, 数据科学家的摇篮!_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./数据嗨客, 数据科学家的摇篮!_files/common.css" rel="stylesheet">
+  
+  
+<link href="./数据嗨客, 数据科学家的摇篮!_files/note-static-detail.css" rel="stylesheet">
+<link href="./数据嗨客, 数据科学家的摇篮!_files/markdown.css" rel="stylesheet">
+<link href="./数据嗨客, 数据科学家的摇篮!_files/highlight.css" rel="stylesheet">
+<link href="./数据嗨客, 数据科学家的摇篮!_files/popup.css" rel="stylesheet">
+
+  
+  
+    
+    <title>数据嗨客, 数据科学家的摇篮!</title>
+    
+  
+  
+<style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+<!-- 用户已经登录页面 -->
+  <div class="box">
+      <div class="header">
+          <nav class="navbar navbar-default">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://hackdata.cn/"></a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-left navbar-left-margin">
+                  <li><a href="http://hackdata.cn/learn/">课程</a></li>
+                  <!-- <li><a href="/practice/">练习</a></li> -->
+                  <li style="background: rgb(71, 71, 71);"><a href="http://hackdata.cn/note">案例</a></li>
+                  <li><a href="http://hackdata.cn/classroom/all/">教室</a></li>
+                  <li><a href="http://hackdata.cn/competition">竞赛</a></li>
+                </ul>
+
+                <!-- 用户信息和站内信 -->
+                
+                <div class="nav navbar-nav navbar-right">
+                  <div class="dropdown usermessage">
+                      <span class="btn btn-default mes-btn"></span>
+
+                      <div class="mes-menu">
+                          <span class="mes-title">消息</span>
+                          <div class="mes-content-out">
+                            <ul class="mes-content mes-noread"></ul>
+                            <ul class="mes-content mes-read"><li class="one-mes clearfix"><span class="mes-icon mes-room"></span><p>[ 教室 ]数据嗨客在教室数据嗨客大数据百科知识竞赛上传了附件 <a href="http://hackdata.cn/classroom/247/">2018数据嗨客大数据百科知识竞赛获奖名单.xlsx</a></p><span class="mes-delete"></span><span class="mes-id hidden">51729</span></li><li class="one-mes clearfix"><span class="mes-icon mes-competition"></span><p>[ 竞赛 ] 万元赏金赛，一个将大数据知识变现的捷径！ <a href="http://hackdata.cn/classroom/247/" target="_blank">点击查看</a></p><span class="mes-delete"></span><span class="mes-id hidden">47147</span></li><li class="one-mes clearfix"><span class="mes-icon mes-room"></span><p>[ 教室 ]您申请加入教室"数据嗨客十项全能邀请赛"的请求被通过</p><span class="mes-delete"></span><span class="mes-id hidden">41868</span></li><li class="one-mes clearfix"><span class="mes-icon mes-room"></span><p>[ 教室 ]您申请加入教室"博雅教学研发部"的请求被通过</p><span class="mes-delete"></span><span class="mes-id hidden">41134</span></li></ul>
+                            <p class="mes-end">
+                                -- 没有更多了 --
+                            </p>
+                          </div>
+                          <p class="no-mes">
+                              还没有收到消息
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="dropdown userprofile">
+                      <span class="btn btn-default dropdown-toggle" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">
+                          <span id="ckTest">
+                              <img class="img-circle" src="./数据嗨客, 数据科学家的摇篮!_files/6028.jpg">
+                          </span>
+                          <p class="nav-username">
+                              
+                                张英乔
+                              
+                          </p>
+                          <span class="caret"></span>
+                      </span>
+                      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                          <li><a href="http://hackdata.cn/account/view_user_profile/6028/"><span></span><p>个人主页</p></a></li>
+                          <li><a href="http://hackdata.cn/account/user_profile/"><span></span><p>账号设置</p></a></li>
+                          <!--<li><a href="/comment/"><span></span><p>我的评论</p></a></li>-->
+                          <!--<li><a href="/own_create_classroom/"><span></span><p>我的教室</p></a></li>-->
+                          <!--<li><a href="/achievements/"><span></span><p>收藏讲义</p></a></li>-->
+                          <!--<li><a href="/note/view_my_note_list"><span></span><p>我的案例</p></a></li>-->
+                          <li><a href="http://hackdata.cn/account/logout/"><span></span><p>退出</p></a></li>
+                      </ul>
+                  </div>
+                </div><!-- 用户信息和站内信 end -->
+
+                
+                <!-- 搜索框 -->
+                <div class="nav navbar-nav navbar-right nav-search-bar">
+                    <div class="input-group">
+                      <div class="input-group-btn">
+                        <button type="button" class="search-select btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">案例 <span class="navi-arrow-down"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a id="nav-select-val-2" href="http://hackdata.cn/note/view_static_note/b1478a5ce798739d1093e7580f52ef9b/#" class="nav-select-item">课程</a></li>
+                          <li><a id="nav-select-val-3" href="http://hackdata.cn/note/view_static_note/b1478a5ce798739d1093e7580f52ef9b/#" class="nav-select-item active">案例</a></li>
+                          <li><a id="nav-select-val-4" href="http://hackdata.cn/note/view_static_note/b1478a5ce798739d1093e7580f52ef9b/#" class="nav-select-item">竞赛</a></li>
+                          <li><a id="nav-select-val-1" href="http://hackdata.cn/note/view_static_note/b1478a5ce798739d1093e7580f52ef9b/#" class="nav-select-item">教室</a></li>
+                        </ul>
+                      </div><!-- /btn-group -->
+                      <input type="text" class="form-control" id="nav-search-input" aria-label="...">
+                      <span class="nav-search-icon" id="nav-search-btn"></span>
+                    </div><!-- /input-group -->
+                </div> <!-- 搜索框 end -->
+              </div><!-- /.navbar-collapse -->
+              <!-- 消息提示 -->
+              <div class="dropdown usermessage-out">
+                  <span class="btn btn-default mes-btn"></span>
+                  <div class="mes-menu">
+                      <span class="mes-title">消息</span>
+                      <div class="mes-content-out">
+                        <ul class="mes-content mes-noread"></ul>
+                        <ul class="mes-content mes-read"><li class="one-mes clearfix"><span class="mes-icon mes-room"></span><p>[ 教室 ]数据嗨客在教室数据嗨客大数据百科知识竞赛上传了附件 <a href="http://hackdata.cn/classroom/247/">2018数据嗨客大数据百科知识竞赛获奖名单.xlsx</a></p><span class="mes-delete"></span><span class="mes-id hidden">51729</span></li><li class="one-mes clearfix"><span class="mes-icon mes-competition"></span><p>[ 竞赛 ] 万元赏金赛，一个将大数据知识变现的捷径！ <a href="http://hackdata.cn/classroom/247/" target="_blank">点击查看</a></p><span class="mes-delete"></span><span class="mes-id hidden">47147</span></li><li class="one-mes clearfix"><span class="mes-icon mes-room"></span><p>[ 教室 ]您申请加入教室"数据嗨客十项全能邀请赛"的请求被通过</p><span class="mes-delete"></span><span class="mes-id hidden">41868</span></li><li class="one-mes clearfix"><span class="mes-icon mes-room"></span><p>[ 教室 ]您申请加入教室"博雅教学研发部"的请求被通过</p><span class="mes-delete"></span><span class="mes-id hidden">41134</span></li></ul>
+                        <p class="mes-end">
+                            -- 没有更多了 --
+                        </p>
+                      </div>
+                      <p class="no-mes">
+                          还没有收到消息
+                      </p>
+                  </div>
+              </div><!-- 消息提示end -->
+            </div><!-- /.container-fluid -->
+          </nav>
+      </div>
+      
+
+
+<div class="hidden" id="is_login">0</div>
+
+
+
+<div class="note-static-detail container-fluid">
+    <!-- 案例标题区 案例名称, tag, 创建者, 拥有者, 分享者, 点击数, 分享数, 运行/保存按钮 start -->
+    <div class="note-title row">
+        <div class="col-xs-12">
+            <div class="info-box">
+                <div class="box-header clearfix">
+                    <div>
+                        <h3 class="title-text">使用Python的random模块进行模拟  <span class="hidden">(ID: 11767)</span></h3>
+                        <div id="note-id" class="hidden">11767</div>
+                        <div id="note-token" class="hidden">b1478a5ce798739d1093e7580f52ef9b</div>
+                    </div>
+
+                    <div class="action box-tools pull-right">
+                        
+                        <button class="btn-action btn btn-default" id="btn-run">运行</button>
+                        
+                    </div>
+
+                </div>
+                <div class="note-info box-body">
+                    <div class="info-left">
+
+
+                            <span class="avatar-img">
+                                <img class="img-circle avatar" src="./数据嗨客, 数据科学家的摇篮!_files/6028(1).jpg">
+                            </span>
+
+                            <div class="note-view-info">
+                                <span class="creater text">张英乔 </span>
+                                <div class="note-info-detail">
+                                    <span class="update-time text"> 更新于 2018-06-29 17:13:51</span>
+                                    
+                                    <span class="page-view text"> 浏览 17</span>
+                                    <span class="share-count text"> 收藏 9</span>
+                                </div>
+
+                            </div>
+
+
+                    </div>
+                    <!--<div class="info-right pull-right">-->
+                        <!--<div class="page-view pull-left">-->
+                            <!--<div class="text-center" data-toggle="tooltip" data-placement="top" title="浏览数">-->
+                                <!--<img class="img-circle img-page-view" src="/static/image/icon-open-eye.png">-->
+                            <!--</div>-->
+                            <!--<div class="text-center">-->
+                                <!--<span>17</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="share-count pull-right">-->
+                            <!--<div class="text-center" data-toggle="tooltip" data-placement="top" title="收藏量">-->
+                                <!--<img class="img-circle img-share" src="/static/image/icon-heart.png">-->
+                            <!--</div>-->
+                            <!--<div class="text-center">-->
+                                <!--<span>9</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 案例标题区end -->
+
+    <!-- 案例描述区 start -->
+    <div class="note-desc hidden row">
+        <div class="col-xs-12">
+            <div class="info-box">
+                <div class="box-header with-border hidden">
+                    <h4>案例描述</h4>
+                </div>
+                <div class="box-body" id="note-description"><p><img src="./数据嗨客, 数据科学家的摇篮!_files/timg_1529893094055_1f8b.jpg" alt="png">
+随机数是随机试验的结果。使用随机数，我们可以进行样本抽样，样本分配，构造统计分布，进行蒙特卡洛模拟等，随机数的应用在统计分析中起着至关重要的作用。Python中随机数的生成主要运用random模块或者numpy包，其中random模块是Python的内置标准库。本案例就将通过random模块，构造统计分布，并介绍一些常用的模拟方法。也会使用  matplotlib进行数据可视化等操作。</p></div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- 案例描述区 end -->
+
+    <!-- 案例静态文件展示区 -->
+    <div class="content row">
+        <div class="col-xs-12">
+            <div class="info-box">
+                
+                <div class="box-header with-border hidden">
+                    <h4>案例内容</h4>
+                </div>
+
+                <div class="box-body">
+
+                    <iframe src="./数据嗨客, 数据科学家的摇篮!_files/6028_b1478a5ce798739d1093e7580f52ef9b_show.html" class="explore-ifram" marginheight="0" marginwidth="0" frameborder="0" height="900px" scrolling="no" width="100%" id="iframepage" name="iframepage" style="height: 10376px;">
+                    </iframe>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- 静态展示区 end -->
+
+     <!-- 讨论区 start -->
+    
+    <div class="content row">
+        <div class="col-xs-12">
+            <div class="info-box">
+                <div class="box-header with-border hidden">
+                    <h4>案例讨论</h4>
+                </div>
+                <div class="box-body">
+                    <div class="note-discussion">
+                        
+                            <div class="publish-topic clearfix">
+                                <textarea maxlength="300" class="textarea" id="textarea_one" name="textarea" placeholder="发表您的讨论"></textarea>
+                                <span class="numLimit">(<span id="numLength">0</span>/300)</span>
+                                <span id="submit-btn" class="btn btn-info publish-btn">发布</span>
+                            </div>
+                        
+                        
+
+                        
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 讨论区 end -->
+
+</div>
+
+<div class="base-nologin">
+
+    <div class="pop-login popup-info popup" style="top: 100px;">
+      <div class="popup-down login-down"></div>
+      <div class="content popup-up">
+          <div class="popup-bar">
+            登录
+            <span class="popup-close"></span>
+          </div>
+          <div class="loginpop hidden"></div>
+          <div class="popup-content">
+              <form class="login_form">
+                  
+                  <div class="errorMessage"></div>
+                  <input class="form-control info-input" id="id_username" name="username" placeholder="手机号/邮箱" required="required" type="text">
+
+                  <input class="form-control info-input" id="id_password" name="password" placeholder="密码" required="required" type="password">
+
+                  <label id="login-form-captcha" class="hidden">
+                      <input class="form-control info-input" id="id_captcha_0" name="captcha_0" placeholder="验证码" type="hidden" value="">
+                      <input class="form-control info-input" id="id_captcha_1" name="captcha_1" placeholder="验证码" type="text">
+                      <img src="http://hackdata.cn/note/view_static_note/b1478a5ce798739d1093e7580f52ef9b/" alt="captcha" class="captcha_captcha">
+                      <a href="javascript:void(0);" class="change-one" onclick="refresh_captcha_captcha(&#39;/captcha/refresh/&#39;)">换一张</a>
+
+                  </label>
+                  <label>
+                      
+                  </label>
+                  <!-- <label class="protocol squareSelect">
+                      记住账号和密码
+                  </label> -->
+                  <p class="loginToRetrieve little-bar">忘记密码？</p>
+              </form>
+              <div class="login-btn btn btn-info btn-full">登录</div>
+              <!-- <p class="loginToRegister little-bar">去注册 ></p> -->
+              <p class="loginToRegister little-bar"></p>
+          </div>
+      </div>
+      <input class="notice-roomid" type="hidden" name="room_id" value="">
+    </div>
+
+    <div class="pop-sendemail popup-info popup" style="top: 100px;">
+      <div class="popup-down sendemail-down"></div>
+      <div class="content popup-up">
+          <div class="popup-bar">注册</div>
+          <div class="popup-content">
+              <div class="sendemail-pic"></div>
+              <p class="sendemail-p">一封激活邮件已经发到您的邮箱，请登录邮箱完成帐号注册。</p>
+              <div class="sendemail-btn btn btn-info btn-full">知道了</div>
+          </div>
+      </div>
+      <input class="notice-roomid" type="hidden" name="room_id" value="">
+    </div>
+
+    <div class="pop-password-retrieve popup-info popup" style="top: 100px;">
+      <div class="popup-down password-retrieve-down"></div>
+      <div class="content popup-up">
+          <div class="popup-bar">
+            找回密码
+            <span class="popup-close"></span>
+          </div>
+          <div class="popup-content">
+              <div class="choose clearfix">
+                  <span class="active" name="phone-password-retrieve">手机密码找回</span>
+                  <span name="email-password-retrieve">邮箱密码找回</span>
+              </div>
+              <form class="phone-password-retrieve-form">
+                  
+                  <div class="errorMessage"></div>
+                  <input class="form-control info-input" id="password-retrieve-phone" name="phone" placeholder="手机号" required="required" type="text">
+                  <input name="type" class="hidden" value="2" type="text">
+                  <label for="" class="clearfix">
+                      <input class="form-control info-input captcha-input" id="vcode" name="vcode" placeholder="短信验证码" required="required" type="text">
+                      <div class="phoneCaptcha-btn btn">发送验证码</div>
+                  </label>
+                  <div class="phone-password-retrieve-btn btn btn-info btn-full">提交</div>
+              </form>
+              <form class="email-password-retrieve-form">
+                  
+                  <div class="errorMessage"></div>
+                  <input class="form-control info-input" id="password-retrieve-email" name="email" placeholder="邮箱地址" required="required" type="email">
+                  <input name="type" class="hidden" value="2" type="text">
+                  <input class="form-control info-input" id="id_email_retrieve_captcha_0" name="email_retrieve_captcha_0" placeholder="验证码" type="hidden" value="">
+                  <input class="form-control info-input" id="id_email_retrieve_captcha_1" name="email_retrieve_captcha_1" placeholder="验证码" type="text">
+                  <img src="http://hackdata.cn/note/view_static_note/b1478a5ce798739d1093e7580f52ef9b/" alt="captcha" class="captcha_email_retrieve_captcha">
+                  <a href="javascript:void(0);" id="email-change-one" class="change-one" onclick="refresh_captcha_email_retrieve_captcha(&#39;/captcha/refresh/&#39;)">换一张</a>
+                  <div class="email-password-retrieve-btn btn btn-info btn-full">提交</div>
+              </form>
+              <p class="retrieveToLogin little-bar">返回登录 &gt;</p>
+          </div>
+      </div>
+      <input class="notice-roomid" type="hidden" name="room_id" value="">
+    </div>
+
+    <div class="pop-sendemail-password popup-info popup" style="top: 100px;">
+          <div class="popup-down sendemail-password-down"></div>
+          <div class="content popup-up">
+              <div class="popup-bar">
+                找回密码
+              </div>
+              <div class="popup-content">
+                  <div class="sendemail-pic"></div>
+                  <p class="sendemail-p">重置密码邮件已经发送，请登录邮箱完成密码重置。</p>
+                  <div class="sendemail-password-btn btn btn-info btn-full">知道了</div>
+              </div>
+          </div>
+          <input class="notice-roomid" type="hidden" name="room_id" value="">
+      </div>
+</div>
+
+  </div>
+
+
+  <div class="footer footer-trivial footer-trivial3">
+        <div class="footer-line">
+            <div class="row">
+                <div class="col-xs-5">
+                    <div class="copy-right col-xs-10" style="text-align:center;"><a href="http://www.miibeian.gov.cn/">© 2017 Hackdata 京ICP备17056523号-3 </a></div>
+                </div>
+                <div class="col-xs-7">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-2">
+                      <a class="footerContent" href="http://hackdata.cn/footer?sub=0">关于我们</a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a class="footerContent" href="http://hackdata.cn/footer?sub=0">产品介绍</a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a class="footerContent" href="http://hackdata.cn/footer?sub=1">服务条款</a>
+                    </div>
+                    <div class="col-xs-2">
+                      <a class="footerContent" href="http://hackdata.cn/footer?sub=2">帮助中心</a>
+                    </div>
+
+                    <div class="col-xs-2">
+                      <a class="footerContent" href="http://hackdata.cn/footer?sub=3">联系我们</a>
+                    </div>
+                    <div class="col-xs-1"></div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--<div class="footp row">-->
+            <!--<div class="col-xs-1"></div>-->
+            <!--<div class="copy-right col-xs-10" style="text-align:center;">&copy; 2017 HackData</div>-->
+            <!--<div class="col-xs-1"></div>-->
+        <!--</div>-->
+  </div>
+
+    <!--手机版-->
+    <div class="container phone">
+        <div class="row footer-copy">
+            <div class="col-xs-12 text-center">
+                <a href="http://hackdata.cn/footer?sub=0">关于我们</a> <span>|</span>
+                <a href="http://hackdata.cn/footer?sub=0">产品介绍</a> <span>|</span>
+                <a href="http://hackdata.cn/footer?sub=1">服务条款</a> <span>|</span>
+                <a href="http://hackdata.cn/footer?sub=2">帮助中心</a>
+            </div>
+
+        </div>
+        <div class="row footer-copy1">
+            <div class="col-xs-12 text-center">
+                <a href="http://www.miibeian.gov.cn/"> © 2017 Hackdata 京ICP备17056523号-3 </a>
+            </div>
+        </div>
+    </div>
+    <!--手机版end-->
+
+
+  
+  
+  <script type="text/javascript">
+      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+      document.write(unescape("%3Cspan id='cnzz_stat_icon_1273646778'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1273646778%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+  </script><span id="cnzz_stat_icon_1273646778"><a href="http://www.cnzz.com/stat/website.php?web_id=1273646778" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="./数据嗨客, 数据科学家的摇篮!_files/pic.gif"></a></span><script src="./数据嗨客, 数据科学家的摇篮!_files/z_stat.php" type="text/javascript"></script><script src="./数据嗨客, 数据科学家的摇篮!_files/core.php" charset="utf-8" type="text/javascript"></script>
+  
+  <script src="./数据嗨客, 数据科学家的摇篮!_files/jquery-1.11.1.min.js.download"></script>
+  <script src="./数据嗨客, 数据科学家的摇篮!_files/jquery-migrate-1.2.1.min.js.download"></script>
+  <script src="./数据嗨客, 数据科学家的摇篮!_files/jquery-ui.min.js.download"></script>
+  <script src="./数据嗨客, 数据科学家的摇篮!_files/bootstrap.min.js.download"></script>
+  <script src="./数据嗨客, 数据科学家的摇篮!_files/jquery.confirm.min.js.download"></script>
+
+  
+  <script src="./数据嗨客, 数据科学家的摇篮!_files/base.js.download"></script>
+  <!-- 继承页面js -->
+  
+<script src="./数据嗨客, 数据科学家的摇篮!_files/highlight.pack.js.download"></script>
+<script src="./数据嗨客, 数据科学家的摇篮!_files/note-static-detail-init.js.download"></script>
+<script src="./数据嗨客, 数据科学家的摇篮!_files/MathJax.js.download"></script>
+<script src="./数据嗨客, 数据科学家的摇篮!_files/TeX-AMS-MML_HTMLorMML.js.download"></script>
+<script src="./数据嗨客, 数据科学家的摇篮!_files/showdown.js.download"></script>
+<script src="./数据嗨客, 数据科学家的摇篮!_files/note-static-detail.js.download"></script>
+
+<!-- 登录表单提交 -->
+<script src="./数据嗨客, 数据科学家的摇篮!_files/login-register.js.download"></script>
+<script src="./数据嗨客, 数据科学家的摇篮!_files/common.js.download"></script>
+
+
+<script src="./数据嗨客, 数据科学家的摇篮!_files/jweixin-1.2.0.js.download"></script>
+
+
+<script>
+var timestamps;
+var nonceStrs;
+var signatures;
+var appid;
+var _url = location.href.split('#')[0];
+
+$.ajax({
+    async: false,
+    url: 'http://hackdata.cn/get_wx_config/',
+    type: "get",
+    dataType: "json",
+    data: {url:_url},
+    success: function (data) {
+        timestamps = data.timestamp;
+        nonceStrs = data.nonceStr;
+        signatures = data.signature;
+        appid = data.appId;
+    }
+});
+
+wx.config({
+    debug: false,
+    appId: appid,
+    timestamp:  timestamps,
+    nonceStr:   nonceStrs,
+    signature:  signatures,
+    jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo', 'onMenuShareQZone'],
+});
+
+
+wx.ready(function(){
+
+    wx.onMenuShareAppMessage({
+        title: '数据嗨客 | 使用Python的random模块进行模拟',
+        desc: '![png](http://hackdata.cn/media/note_ima',
+        link: _url,
+        imgUrl: 'http://hackdata.cn/media/note_images/timg_1529893094055_1f8b.jpg',
+    });
+
+    wx.onMenuShareTimeline({
+        title: '数据嗨客 | 使用Python的random模块进行模拟',
+        link: _url,
+        imgUrl: 'http://hackdata.cn/media/note_images/timg_1529893094055_1f8b.jpg',
+    });
+
+})
+
+wx.error(function(res){
+   console.log(res);
+});
+
+
+</script>
+
+
+
+
+
+
+
+</body></html>
