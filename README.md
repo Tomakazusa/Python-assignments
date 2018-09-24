@@ -1,1 +1,1 @@
-+ These are my Python code samples
++ These are Python code samples from my Python course and internship
